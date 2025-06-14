@@ -1,19 +1,18 @@
 import random
 
 def computer_choice():
-    secret_words = ["python", "coding", "robotics", "programming", "technology", "computer", "software", "network"]
+    secret_words = ["python", "coding", "robotics", "programming", "technology", "computer", "software", "network", "animation", "controller", "internet", "website", "tablet", "browser", "language", "media", "robot", "device", "engineering", "gadget", "electronics", "mechanics", "computing", "machine", "invention"]
     word = random.choice(secret_words)
     return word
-
-print("Welcome to a Game of Hangman!")
 
 word = computer_choice()
 letters = list(word)
 n = len(word)
 guessed_letters = ["_" for x in letters]
-attempts = 7
+attempts = 10
 
-print("This word has " + str(n) + " letters! You have 7 chances to guess the word. If you guess wrong letters 7 times, you lose. If you guess all the letters in the word correctly, you win the game!")
+print("Welcome to a Game of Hangman!")
+print("This word has " + str(n) + " letters! You have 10 chances to guess the word. If you guess wrong letters 10 times, you lose. If you guess all the letters in the word correctly, you win the game!")
 print(guessed_letters)
 
 while attempts > 0:
