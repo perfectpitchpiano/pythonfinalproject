@@ -1,6 +1,11 @@
-def functioninput(): #creates function
-    user_input = input("Enter anything here:") #allows for user to enter anything they want in the function
-    return user_input #allows for "user_input" to be used outside of the function
+def hello(name): #new function "hello" that accepts the parameter "name"
+    return "Hello, " + name #returns the output of the function
 
-user_input = functioninput() #defines "user_input" as the function
-print(user_input) #prints the user input
+print(hello("Ivanka")) #function utilizing the argument "Ivanka"
+
+
+
+def multiply(a,b): #new function "multiply" that accepts the parameters "a" amd "b"
+    return a*b #returns the output of the function
+
+print(multiply(2,3)) #function utilizing the arguments "2" and "3"
